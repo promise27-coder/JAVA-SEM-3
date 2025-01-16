@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class str {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("enter a original string:");
+        String original = sc.nextLine();
+
+        System.out.println(" replacabel  string is :");
+        String replace = sc.nextLine();
+
+        if (!original.contains(replace)) {
+            System.out.println("Error: The string to be replaced does not exist in the original string.");
+            return; // Exit the program or handle the error as needed
+        }
+        System.out.println(" enter new string: ");
+        String newly = sc.nextLine();
+
+       String modify = original.replace(replace,newly);
+
+
+        System.out.println("edited string is: " + modify );
+    }
+    
+}
